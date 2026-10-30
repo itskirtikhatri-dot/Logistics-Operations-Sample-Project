@@ -28,6 +28,18 @@ The dataset contains 1,200 synthetic shipment records covering 2025. Fields incl
 
 The source data includes simulated delivery timestamps for cancelled records to keep the file structurally consistent. Cancelled records must be excluded from delivery-time KPIs.
 
+## Findings and interpretation
+Do not claim that the simulated patterns are real-world logistics facts. Once you run the analysis, record the actual results from your workbook or dashboard here. Investigate whether differences may be associated with distance, service level, weather, region, or carrier mix. Treat these as associations, not proof of causation.
+
+## Limitations
+- The dataset is synthetic and intentionally simplified.
+- Cost, revenue, weather, and transit times are simulated, not sourced from a real logistics provider.
+- The dataset does not include route-level GPS, failed delivery attempts, customs, fuel surcharges, or warehouse handling timestamps.
+- On-time status is represented by the `shipment_status` field rather than inferred from an independently recorded promised delivery timestamp.
+
+## Skills demonstrated
+Data cleaning and validation · Excel · SQL · KPI reporting · Operational analysis · Logistics performance · Data storytelling · Power BI (after dashboard completion)
+
 ## Suggested Power BI measures (DAX)
 ```DAX
 
@@ -73,14 +85,3 @@ Recommended one-page layout:
 - Bar chart: delay rate by region
 - Column chart: average shipping cost by service level
 
-## Findings and interpretation
-Do not claim that the simulated patterns are real-world logistics facts. Once you run the analysis, record the actual results from your workbook or dashboard here. Investigate whether differences may be associated with distance, service level, weather, region, or carrier mix. Treat these as associations, not proof of causation.
-
-## Limitations
-- The dataset is synthetic and intentionally simplified.
-- Cost, revenue, weather, and transit times are simulated, not sourced from a real logistics provider.
-- The dataset does not include route-level GPS, failed delivery attempts, customs, fuel surcharges, or warehouse handling timestamps.
-- On-time status is represented by the `shipment_status` field rather than inferred from an independently recorded promised delivery timestamp.
-
-## Skills demonstrated
-Data cleaning and validation · Excel · SQL · KPI reporting · Operational analysis · Logistics performance · Data storytelling · Power BI (after dashboard completion)
